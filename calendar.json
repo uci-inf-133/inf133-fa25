@@ -1,0 +1,291 @@
+{
+	"defaults": {
+		"lecture" : {
+			"place": {
+					"time": "11:00",
+					"duration": "80",
+					"label": "Lecture",
+					"location": "ELH 100"
+				}
+		},
+		"discussion" : {
+			"places": [
+				{
+					"time": "16:00",
+					"duration": "50",
+					"location": "ALP 1300"
+				}
+			]
+		},
+		"officehours_daniel": {
+			"title": "Professor Epstein Office Hours",
+			"place": {
+					"time": "13:00",
+					"duration": "60",
+					"location": "DBH 6093"
+				}
+		},
+		"officehours_weijun": {
+			"title": "Weijun Office Hours",
+			"place": {
+					"time": "16:00",
+					"duration": "60",
+					"location": "DBH 5221"
+				}
+		},
+		"officehours_ziqi": {
+			"title": "Ziqi Office Hours",
+			"place": {
+					"time": "14:00",
+					"duration": "60",
+					"location": "DBH 5221"
+				}
+		},
+		"assignment" : {
+			"due": "23:59"
+		},
+		"quiz" : {
+			"place": null
+		}
+	},
+	"events" : [
+		{
+			"date": "2025-09-25",
+			"type": "lecture",
+			"title": "Introduction & History"
+		},
+		{
+			"date": "2025-09-26",
+			"type": "discussion",
+			"title": "Git and GitHub Tutorial (TBD)"
+		},
+		{
+			"date": "2025-09-30",
+			"type": "lecture",
+			"title": "HTML & Accessibility"
+		},
+		{
+			"date": "2025-10-02",
+			"type": "lecture",
+			"title": "CSS"
+		},
+		{
+			"date": "2025-10-03",
+			"type": "discussion",
+			"title": "HTML & CSS Demo (TBD)"
+		},
+		{
+			"date": "2025-10-07",
+			"type": "lecture",
+			"title": "Responsive Design & Javascript 1"
+		},
+		{
+			"date": "2025-10-09",
+			"type": "lecture",
+			"title": "JavaScript 2"
+		},
+        {
+			"date": "2025-10-10",
+			"type": "discussion",
+			"title": "TA office hours (TBD)"
+		},
+        {
+            "date": "2025-10-13",
+            "type": "absence",
+            "title": "Professor Epstein @ Ubicomp"
+        },
+        {
+            "date": "2025-10-14",
+            "type": "absence",
+            "title": "Professor Epstein @ Ubicomp"
+        },
+		{
+			"date": "2025-10-14",
+			"type": "lecture",
+			"title": "DOM Manipulation & Package Management",
+			"place": {
+				"time": null,
+				"location": "Pre-recorded"
+			}
+		},
+        {
+            "date": "2025-10-15",
+            "type": "absence",
+            "title": "Professor Epstein @ Ubicomp"
+        },
+		{
+			"date": "2025-10-15",
+			"type": "assignment",
+			"title": "A1",
+			"name": "Responsive Portfolio in HTML and CSS",
+			"link": "assignments/a1"
+		},
+        {
+            "date": "2025-10-16",
+            "type": "absence",
+            "title": "Professor Epstein @ Ubicomp"
+        },
+		{
+			"date": "2025-10-16",
+			"type": "lecture",
+			"title": "TypeScript & Data Visualization Tools",
+			"place": {
+				"time": null,
+				"location": "Pre-recorded"
+			}
+		},
+        {
+            "date": "2025-10-17",
+            "type": "absence",
+            "title": "Professor Epstein @ Ubicomp"
+        },
+        {
+			"date": "2025-10-17",
+			"type": "discussion",
+			"title": "Javascript Demo (TBD)"
+		},
+		{
+			"date": "2025-10-21",
+			"type": "lecture",
+			"title": "AJAX, Fetch, & Promises"
+		},
+		{
+			"date": "2025-10-23",
+			"type": "lecture",
+			"title": "Server-Side Development, Authentication, and Authorization"
+		},
+        {
+			"date": "2025-10-24",
+			"type": "discussion",
+			"title": "Vega-Lite Demo (Ziqi)"
+		},
+		{
+			"date": "2025-10-28",
+			"type": "lecture",
+			"title": "Components in Angular"
+		},
+		{
+			"date": "2025-10-29",
+			"type": "assignment",
+			"title": "A2",
+			"name": "Runkeeper Tweet Report in JavaScript and TypeScript"
+		},
+		{
+			"date": "2025-10-30",
+			"type": "lecture",
+			"title": "Separation in Angular & Modeling Human Performance"
+		},
+        {
+			"date": "2025-10-31",
+			"type": "discussion",
+			"title": "Angular Demo (TBD)"
+		},
+		{
+			"date": "2025-11-04",
+			"type": "lecture",
+			"title": "Hybrid & Native Architectures"
+		},
+		{
+			"date": "2025-11-06",
+			"type": "lecture",
+			"title": "Ionic Components"
+		},
+        {
+			"date": "2025-11-07",
+			"type": "discussion",
+			"title": "TA Office Hours (TBD)"
+		},
+        {
+            "date": "2025-11-11",
+            "type": "holiday",
+            "title": "Veterans Day"
+        },
+        {
+            "date": "2025-11-13",
+            "type": "absence",
+            "title": "Professor Epstein @ NSF Panel"
+        },
+		{
+			"date": "2025-11-13",
+			"type": "lecture",
+			"title": "Mobile Design Principles & SASS",
+			"place": {
+				"time": null,
+				"location": "Pre-recorded"
+			}
+		},
+        {
+            "date": "2025-11-14",
+            "type": "absence",
+            "title": "Professor Epstein @ NSF Panel"
+        },
+		{
+			"date": "2025-11-14",
+			"type": "discussion",
+			"title": "TA Office Hours (TBD)"
+		},
+        {
+			"date": "2025-11-14",
+			"type": "assignment",
+			"title": "A3",
+			"name": "Spotify Browser in Angular"
+		},
+		{
+			"date": "2025-11-18",
+			"type": "lecture",
+			"title": "Device Resources & Sensors"
+		},
+		{
+			"date": "2025-11-20",
+			"type": "lecture",
+			"title": "Databases and Local Storage"
+		},
+        {
+			"date": "2025-11-21",
+			"type": "discussion",
+			"title": "Ionic Demo (TBD)"
+		},
+		{
+			"date": "2025-11-25",
+			"type": "lecture",
+			"title": "Small & Large Displays"
+		},
+        {
+            "date": "2025-11-27",
+            "type": "holiday",
+            "title": "Thanksgiving"
+        },
+        {
+            "date": "2025-11-28",
+            "type": "holiday",
+            "title": "Thanksgiving"
+        },
+		{
+			"date": "2025-12-01",
+			"type": "assignment",
+			"title": "A4",
+			"name": "Sleep Tracker in Ionic"
+		},
+        {
+			"date": "2025-12-02",
+			"type": "lecture",
+			"title": "Augmenting Reality & Conversation"
+		},
+		{
+			"date": "2025-12-04",
+			"type": "lecture",
+			"title": "Wrap-up"
+		},
+		{
+			"date": "2025-12-05",
+			"type": "discussion",
+			"title": "TA Office Hours (TBD)"
+		},
+		{
+			"date": "2025-12-10",
+			"type": "assignment",
+			"title": "A5",
+			"name": "TBD"
+		}
+	]
+}
