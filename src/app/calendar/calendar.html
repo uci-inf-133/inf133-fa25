@@ -1,0 +1,16 @@
+<h1>Calendar</h1>
+<div class="row calendar_table">
+    @for(day of calendar; track day) {
+        <div class="day col-12" [class]="day.isWeekend ? (day.isToday ? 'col-md-1 today' : 'col-md-1') : (day.isToday ? 'col-md-2 today' : 'col-md-2')">
+            <div class="d-none d-md-block">
+                {{day.dateStr}}
+            </div>
+            <div class="d-md-none">
+                {{day.dateStr}}
+            </div>
+            @for(event of day.events; track event) {
+                <app-calendar-event [event]="event" [defaults]="defaults[event.type]"></app-calendar-event>
+            }
+        </div>
+    }
+</div>
