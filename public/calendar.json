@@ -52,22 +52,27 @@
 		{
 			"date": "2025-09-25",
 			"type": "lecture",
-			"title": "Introduction & History"
+			"title": "Introduction & History",
+			"link": "lectures/09_25_25-introduction_history.pdf"
 		},
 		{
 			"date": "2025-09-26",
 			"type": "discussion",
-			"title": "Git and GitHub Tutorial (TBD)"
+			"title": "Git and GitHub Tutorial (Ziqi)"
 		},
 		{
 			"date": "2025-09-30",
 			"type": "lecture",
-			"title": "HTML & Accessibility"
+			"title": "HTML & Accessibility",
+			"link": "lectures/09_30_25-html_accessibility.pdf",
+			"demo": "demos/09_30_25-html_accessibility.zip"
 		},
 		{
 			"date": "2025-10-02",
 			"type": "lecture",
-			"title": "CSS"
+			"title": "CSS",
+			"link": "lectures/10_02_25-css.pdf",
+			"demo": "demos/10_02_25-css.zip"
 		},
 		{
 			"date": "2025-10-03",
