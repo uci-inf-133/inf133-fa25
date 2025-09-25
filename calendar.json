@@ -20,7 +20,7 @@
 		"officehours_daniel": {
 			"title": "Professor Epstein Office Hours",
 			"place": {
-					"time": "13:00",
+					"time": "12:30",
 					"duration": "60",
 					"location": "DBH 6093"
 				}
@@ -28,17 +28,33 @@
 		"officehours_weijun": {
 			"title": "Weijun Office Hours",
 			"place": {
-					"time": "16:00",
+					"time": "14:00",
 					"duration": "60",
-					"location": "DBH 5221"
+					"location": "TBD"
 				}
 		},
 		"officehours_ziqi": {
 			"title": "Ziqi Office Hours",
 			"place": {
-					"time": "14:00",
+					"time": "11:00",
 					"duration": "60",
-					"location": "DBH 5221"
+					"location": "TBD"
+				}
+		},
+		"officehours_kaylee": {
+			"title": "Kaylee Office Hours",
+			"place": {
+					"time": "9:30",
+					"duration": "60",
+					"location": "TBD"
+				}
+		},
+		"officehours_aaron": {
+			"title": "Aaron Office Hours",
+			"place": {
+					"time": "13:00",
+					"duration": "60",
+					"location": "TBD"
 				}
 		},
 		"assignment" : {
@@ -63,11 +79,27 @@
 			"link": "discussions/09_26_25-git_github.pdf"
 		},
 		{
+			"date": "2025-09-29",
+			"type": "officehours_weijun"
+		},
+		{
 			"date": "2025-09-30",
 			"type": "lecture",
 			"title": "HTML & Accessibility",
 			"link": "lectures/09_30_25-html_accessibility.pdf",
 			"demo": "demos/09_30_25-html_accessibility.zip"
+		},
+		{
+			"date": "2025-09-30",
+			"type": "officehours_daniel"
+		},
+		{
+			"date": "2025-10-01",
+			"type": "officehours_ziqi"
+		},
+		{
+			"date": "2025-10-02",
+			"type": "officehours_kaylee"
 		},
 		{
 			"date": "2025-10-02",
@@ -78,13 +110,33 @@
 		},
 		{
 			"date": "2025-10-03",
+			"type": "officehours_aaron"
+		},
+		{
+			"date": "2025-10-03",
 			"type": "discussion",
 			"title": "HTML & CSS Demo (TBD)"
+		},
+		{
+			"date": "2025-10-06",
+			"type": "officehours_weijun"
 		},
 		{
 			"date": "2025-10-07",
 			"type": "lecture",
 			"title": "Responsive Design & Javascript 1"
+		},
+		{
+			"date": "2025-10-07",
+			"type": "officehours_daniel"
+		},
+		{
+			"date": "2025-10-08",
+			"type": "officehours_ziqi"
+		},
+		{
+			"date": "2025-10-09",
+			"type": "officehours_kaylee"
 		},
 		{
 			"date": "2025-10-09",
@@ -96,11 +148,19 @@
 			"type": "discussion",
 			"title": "TA office hours (TBD)"
 		},
+		{
+			"date": "2025-10-10",
+			"type": "officehours_aaron"
+		},
         {
             "date": "2025-10-13",
             "type": "absence",
             "title": "Professor Epstein @ Ubicomp"
         },
+		{
+			"date": "2025-10-13",
+			"type": "officehours_weijun"
+		},
         {
             "date": "2025-10-14",
             "type": "absence",
@@ -114,6 +174,10 @@
 				"time": null,
 				"location": "Pre-recorded"
 			}
+		},
+		{
+			"date": "2025-10-15",
+			"type": "officehours_ziqi"
 		},
         {
             "date": "2025-10-15",
@@ -134,6 +198,10 @@
         },
 		{
 			"date": "2025-10-16",
+			"type": "officehours_kaylee"
+		},
+		{
+			"date": "2025-10-16",
 			"type": "lecture",
 			"title": "TypeScript & Data Visualization Tools",
 			"place": {
@@ -152,9 +220,29 @@
 			"title": "Javascript Demo (TBD)"
 		},
 		{
+			"date": "2025-10-17",
+			"type": "officehours_aaron"
+		},
+		{
+			"date": "2025-10-20",
+			"type": "officehours_weijun"
+		},
+		{
 			"date": "2025-10-21",
 			"type": "lecture",
 			"title": "AJAX, Fetch, & Promises"
+		},
+		{
+			"date": "2025-10-21",
+			"type": "officehours_daniel"
+		},
+		{
+			"date": "2025-10-22",
+			"type": "officehours_ziqi"
+		},
+		{
+			"date": "2025-10-23",
+			"type": "officehours_kaylee"
 		},
 		{
 			"date": "2025-10-23",
@@ -167,9 +255,25 @@
 			"title": "Vega-Lite Demo (Ziqi)"
 		},
 		{
+			"date": "2025-10-24",
+			"type": "officehours_aaron"
+		},
+		{
+			"date": "2025-10-27",
+			"type": "officehours_weijun"
+		},
+		{
 			"date": "2025-10-28",
 			"type": "lecture",
 			"title": "Components in Angular"
+		},
+		{
+			"date": "2025-10-28",
+			"type": "officehours_daniel"
+		},
+		{
+			"date": "2025-10-29",
+			"type": "officehours_ziqi"
 		},
 		{
 			"date": "2025-10-29",
@@ -182,15 +286,39 @@
 			"type": "lecture",
 			"title": "Separation in Angular & Modeling Human Performance"
 		},
+		{
+			"date": "2025-10-30",
+			"type": "officehours_kaylee"
+		},
         {
 			"date": "2025-10-31",
 			"type": "discussion",
 			"title": "Angular Demo (TBD)"
 		},
 		{
+			"date": "2025-10-31",
+			"type": "officehours_aaron"
+		},
+		{
+			"date": "2025-11-03",
+			"type": "officehours_weijun"
+		},
+		{
 			"date": "2025-11-04",
 			"type": "lecture",
 			"title": "Hybrid & Native Architectures"
+		},
+		{
+			"date": "2025-11-04",
+			"type": "officehours_daniel"
+		},
+		{
+			"date": "2025-11-05",
+			"type": "officehours_ziqi"
+		},
+		{
+			"date": "2025-11-06",
+			"type": "officehours_kaylee"
 		},
 		{
 			"date": "2025-11-06",
@@ -202,11 +330,27 @@
 			"type": "discussion",
 			"title": "TA Office Hours (TBD)"
 		},
+		{
+			"date": "2025-11-07",
+			"type": "officehours_aaron"
+		},
+		{
+			"date": "2025-11-10",
+			"type": "officehours_weijun"
+		},
         {
             "date": "2025-11-11",
             "type": "holiday",
             "title": "Veterans Day"
         },
+		{
+			"date": "2025-11-12",
+			"type": "officehours_ziqi"
+		},
+		{
+			"date": "2025-11-13",
+			"type": "officehours_kaylee"
+		},
         {
             "date": "2025-11-13",
             "type": "absence",
@@ -231,6 +375,10 @@
 			"type": "discussion",
 			"title": "TA Office Hours (TBD)"
 		},
+		{
+			"date": "2025-11-14",
+			"type": "officehours_aaron"
+		},
         {
 			"date": "2025-11-14",
 			"type": "assignment",
@@ -238,9 +386,25 @@
 			"name": "Spotify Browser in Angular"
 		},
 		{
+			"date": "2025-11-17",
+			"type": "officehours_weijun"
+		},
+		{
 			"date": "2025-11-18",
 			"type": "lecture",
 			"title": "Device Resources & Sensors"
+		},
+		{
+			"date": "2025-11-18",
+			"type": "officehours_daniel"
+		},
+		{
+			"date": "2025-11-19",
+			"type": "officehours_ziqi"
+		},
+		{
+			"date": "2025-11-20",
+			"type": "officehours_kaylee"
 		},
 		{
 			"date": "2025-11-20",
@@ -253,9 +417,25 @@
 			"title": "Ionic Demo (TBD)"
 		},
 		{
+			"date": "2025-11-21",
+			"type": "officehours_aaron"
+		},
+		{
+			"date": "2025-11-24",
+			"type": "officehours_weijun"
+		},
+		{
 			"date": "2025-11-25",
 			"type": "lecture",
 			"title": "Small & Large Displays"
+		},
+		{
+			"date": "2025-11-25",
+			"type": "officehours_daniel"
+		},
+		{
+			"date": "2025-11-26",
+			"type": "officehours_ziqi"
 		},
         {
             "date": "2025-11-27",
@@ -269,6 +449,10 @@
         },
 		{
 			"date": "2025-12-01",
+			"type": "officehours_weijun"
+		},
+		{
+			"date": "2025-12-01",
 			"type": "assignment",
 			"title": "A4",
 			"name": "Sleep Tracker in Ionic"
@@ -279,6 +463,18 @@
 			"title": "Augmenting Reality & Conversation"
 		},
 		{
+			"date": "2025-12-02",
+			"type": "officehours_daniel"
+		},
+		{
+			"date": "2025-12-03",
+			"type": "officehours_ziqi"
+		},
+		{
+			"date": "2025-12-04",
+			"type": "officehours_kaylee"
+		},
+		{
 			"date": "2025-12-04",
 			"type": "lecture",
 			"title": "Wrap-up"
@@ -287,6 +483,10 @@
 			"date": "2025-12-05",
 			"type": "discussion",
 			"title": "TA Office Hours (TBD)"
+		},
+		{
+			"date": "2025-12-05",
+			"type": "officehours_aaron"
 		},
 		{
 			"date": "2025-12-10",
