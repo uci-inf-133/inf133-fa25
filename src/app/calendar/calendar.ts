@@ -34,7 +34,7 @@ export class Calendar {
   }
 
   parseCalendar(calendar:any) {
-  	const typeOrder = ["holiday", "absence", "assignment", "discussion", "lecture", "demo", "officehours_daniel", "officehours_weijun", "officehours_ziqi", "officehours_emily", "officehours_sohyeon"];
+  	const typeOrder = ["holiday", "absence", "assignment", "officehours_kaylee", "officehours_aaron", "discussion", "lecture", "demo", "officehours_daniel", "officehours_weijun", "officehours_ziqi"];
 
     let events:any[] = calendar['events'];
 	this.defaults = calendar['defaults'];
