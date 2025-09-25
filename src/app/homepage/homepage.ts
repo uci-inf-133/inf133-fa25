@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import moment from 'moment';
+import { TimeUtils } from '../time-utils';
 
 @Component({
   selector: 'app-homepage',
@@ -9,7 +9,7 @@ import moment from 'moment';
   styleUrl: './homepage.css'
 })
 export class Homepage {
-  assignments_and_quizzes:any[] = [];
+  assignments:any[] = [];
   lectures:any[] = [];
 
   constructor(private http:HttpClient) {
@@ -22,15 +22,16 @@ export class Homepage {
     let events:any[] = calendar['events'];
     //Add date string to each event
     events.map(e => {
-      e['dateStr'] = moment(e['date']).format('ddd MMM D');
+      e.date = TimeUtils.createFromString(e.date);
+      e['dateStr'] = new Intl.DateTimeFormat('en-US', {weekday:'short', month:'short', day:'numeric'}).format(e.date);
       return e;
     });
     //Filter by type
-    this.assignments_and_quizzes = events.filter(e => e['type'] == 'assignment' || e['type'] == 'quiz');
+    this.assignments = events.filter(e => e['type'] == 'assignment');
     this.lectures = events.filter(e => e['type'] == 'lecture' || e['type'] == 'discussion');
     //Filter by past/future
-    this.assignments_and_quizzes = this.assignments_and_quizzes.filter(e => moment().isSameOrBefore(moment(e['date']), 'days')).slice(0, 2);
-    this.lectures = this.lectures.filter(e => moment().isSameOrAfter(moment(e['date']), 'days'));
+    this.assignments = this.assignments.filter(e => new Date() < e.date).slice(0, 2);
+    this.lectures = this.lectures.filter(e => new Date() > e.date);
     this.lectures = this.lectures.reverse().slice(0, 5);
   }
 }

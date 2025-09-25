@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { TimeUtils } from '../time-utils';
 
 @Component({
   selector: 'app-calendar-event',
@@ -47,18 +48,14 @@ export class CalendarEvent {
           } else {
             let timestamp = this.event.places[i].time.split(':');
             startTime.setHours(timestamp[0], timestamp[1], 0, 0);
-            let startTimeStr = this.formatTime(startTime);
+            let startTimeStr = TimeUtils.formatTime(startTime);
             let endTime = new Date();
             endTime.setTime(startTime.getTime() + this.event.places[i].duration * 60 * 1000);
-            let endTimeStr = this.formatTime(endTime);
+            let endTimeStr = TimeUtils.formatTime(endTime);
             this.event.places[i].timeStr = startTimeStr + '-' + endTimeStr;
           }
         }
       }
     }
-  }
-
-  formatTime(time:Date):string {
-    return (time.getHours()>12? (time.getHours()%12).toString(): time.getHours()) + ':' + time.getMinutes().toString().padStart(2, "0");
   }
 }

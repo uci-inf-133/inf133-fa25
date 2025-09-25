@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { CalendarEvent } from '../calendar-event/calendar-event';
+import { TimeUtils } from '../time-utils';
 
 @Component({
   selector: 'app-calendar',
@@ -37,9 +38,8 @@ export class Calendar {
 
     let events:any[] = calendar['events'];
 	this.defaults = calendar['defaults'];
-    //Add date string to each event, specify that they're in Pacific time zone
     events = events.map((event) => {
-		event.date = new Date(event.date + " GMT" + this.getTimezoneOffset(event.date));
+		event.date = TimeUtils.createFromString(event.date);
 		return event;
 	});
 

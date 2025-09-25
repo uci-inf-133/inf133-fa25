@@ -7,7 +7,7 @@
 		<p>Slack: <a href="https://uci-inf-133-fa25.slack.com">https://uci-inf-133-fa25.slack.com</a></p>
 		<p>Email: <a href="mailto:informatics-133-staff@uci.edu">informatics-133-staff&#64;uci.edu</a></p>
 		<h2>Upcoming Due Dates</h2>
-		@for (event of assignments_and_quizzes; track event.dateStr) {
+		@for (event of assignments; track event.dateStr) {
             <p>
                 @if (event.link) {
                     <a [href]="event.link">{{event.dateStr}}: {{event.title}}</a>
@@ -17,7 +17,7 @@
 				}
             </p>
         }
-        @if (assignments_and_quizzes.length == 0) {
+        @if (assignments.length == 0) {
             <p>No more!</p>
         }
 		<h2>Recent Lectures & Discussions</h2>
