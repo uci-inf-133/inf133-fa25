@@ -46,7 +46,8 @@
 			"place": {
 					"time": "9:30",
 					"duration": "60",
-					"location": "TBD"
+					"location": "Zoom",
+					"link": "https://uci.zoom.us/j/5612072492"
 				}
 		},
 		"officehours_aaron": {
@@ -80,7 +81,11 @@
 		},
 		{
 			"date": "2025-09-29",
-			"type": "officehours_weijun"
+			"type": "officehours_weijun",
+			"place": {
+					"location": "Zoom",
+					"link": "https://uci.zoom.us/j/3993699399"
+				}
 		},
 		{
 			"date": "2025-09-30",
@@ -95,7 +100,11 @@
 		},
 		{
 			"date": "2025-10-01",
-			"type": "officehours_ziqi"
+			"type": "officehours_ziqi",
+			"place": {
+					"location": "Zoom",
+					"link": "https://uci.zoom.us/j/9208048200"
+				}
 		},
 		{
 			"date": "2025-10-02",
