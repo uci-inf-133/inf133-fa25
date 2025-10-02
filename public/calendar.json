@@ -117,7 +117,8 @@
 			"type": "lecture",
 			"title": "CSS",
 			"link": "lectures/10_02_25-css.pdf",
-			"demo": "demos/10_02_25-css.zip"
+			"demo": "demos/10_02_25-css.zip",
+			"recording": "https://uci.yuja.com/V/Video?v=14139454&a=33502223"
 		},
 		{
 			"date": "2025-10-03",
