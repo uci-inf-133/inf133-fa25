@@ -30,15 +30,15 @@
 			"place": {
 					"time": "14:00",
 					"duration": "60",
-					"location": "TBD"
+					"location": "DBH 5221"
 				}
 		},
 		"officehours_ziqi": {
 			"title": "Ziqi Office Hours",
 			"place": {
-					"time": "11:00",
+					"time": "12:00",
 					"duration": "60",
-					"location": "TBD"
+					"location": "DBH 5221"
 				}
 		},
 		"officehours_kaylee": {
@@ -104,6 +104,7 @@
 			"date": "2025-10-01",
 			"type": "officehours_ziqi",
 			"place": {
+					"time": "11:00",
 					"location": "Zoom",
 					"link": "https://uci.zoom.us/j/9208048200"
 				}
