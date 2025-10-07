@@ -140,7 +140,8 @@
 			"type": "lecture",
 			"title": "Responsive Design & Javascript 1",
 			"link": "lectures/10_07_25-responsive_javascript.pdf",
-			"demo": "demos/10_07_25-responsive_javascript.zip"
+			"demo": "demos/10_07_25-responsive_javascript.zip",
+			"recording": "https://uci.yuja.com/V/Video?v=14194993&a=14359921"
 		},
 		{
 			"date": "2025-10-07",
