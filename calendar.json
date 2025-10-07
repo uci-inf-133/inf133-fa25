@@ -144,7 +144,10 @@
 		},
 		{
 			"date": "2025-10-07",
-			"type": "officehours_daniel"
+			"type": "officehours_daniel",
+			"place": {
+				"duration": "30"
+			}
 		},
 		{
 			"date": "2025-10-08",
