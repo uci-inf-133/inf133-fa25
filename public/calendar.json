@@ -163,7 +163,8 @@
 			"type": "lecture",
 			"title": "JavaScript 2",
 			"link": "lectures/10_09_25-javascript.pdf",
-			"demo": "demos/10_09_25-javascript.zip"
+			"demo": "demos/10_09_25-javascript.zip",
+			"recording": "https://uci.yuja.com/V/Video?v=14219454&a=149517683"
 		},
         {
 			"date": "2025-10-10",
@@ -195,7 +196,10 @@
 			"place": {
 				"time": null,
 				"location": "Pre-recorded"
-			}
+			},
+			"link": "lectures/10_14_25-dom_package.pdf",
+			"demo": "demos/10_14_15-dom_package.zip",
+			"recording": "https://uci.yuja.com/V/Video?v=14123153&node=61574254&a=29304433"
 		},
 		{
 			"date": "2025-10-15",
@@ -229,7 +233,9 @@
 			"place": {
 				"time": null,
 				"location": "Pre-recorded"
-			}
+			},
+			"link": "lectures/10_16_25-typescript_visualization.pdf",
+			"demo": "demos/10_16_25-typescript_visualization.zip"
 		},
         {
             "date": "2025-10-17",
@@ -260,7 +266,10 @@
 		},
 		{
 			"date": "2025-10-22",
-			"type": "officehours_ziqi"
+			"type": "officehours_aaron",
+			"place": {
+				"time": "12:00"
+			}
 		},
 		{
 			"date": "2025-10-23",
@@ -278,7 +287,10 @@
 		},
 		{
 			"date": "2025-10-24",
-			"type": "officehours_aaron"
+			"type": "officehours_ziqi",
+			"place": {
+				"time": "13:00"
+			}
 		},
 		{
 			"date": "2025-10-27",
