@@ -182,7 +182,11 @@
         },
 		{
 			"date": "2025-10-13",
-			"type": "officehours_weijun"
+			"type": "officehours_weijun",
+			"place": {
+				"location": "Zoom",
+				"link": "https://uci.zoom.us/j/3993699399"
+			}
 		},
         {
             "date": "2025-10-14",
