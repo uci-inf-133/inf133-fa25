@@ -239,7 +239,8 @@
 				"location": "Pre-recorded"
 			},
 			"link": "lectures/10_16_25-typescript_visualization.pdf",
-			"demo": "demos/10_16_25-typescript_visualization.zip"
+			"demo": "demos/10_16_25-typescript_visualization.zip",
+			"recording": "https://uci.yuja.com/V/Video?v=14152764&node=61676397&a=151155366"
 		},
         {
             "date": "2025-10-17",
@@ -249,7 +250,8 @@
         {
 			"date": "2025-10-17",
 			"type": "discussion",
-			"title": "Javascript Demo (Weijun)"
+			"title": "Javascript Demo (Weijun)",
+			"link": "discussions/10_17_25-js.pdf"
 		},
 		{
 			"date": "2025-10-17",
