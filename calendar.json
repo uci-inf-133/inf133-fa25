@@ -289,7 +289,8 @@
 			"type": "lecture",
 			"title": "Server-Side Development, Authentication, and Authorization",
 			"link": "lectures/10_23_25-server_authentication.pdf",
-			"demo": "demos/10_23_25-server_authentication.zip"
+			"demo": "demos/10_23_25-server_authentication.zip",
+			"recording": "https://uci.yuja.com/V/Video?v=14352868&a=154656377"
 		},
         {
 			"date": "2025-10-24",
