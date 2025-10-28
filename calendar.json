@@ -314,7 +314,8 @@
 			"type": "lecture",
 			"title": "Components in Angular",
 			"link": "lectures/10_28_25-angular_components.pdf",
-			"demo": "demos/10_28_25-angular_components.zip"
+			"demo": "demos/10_28_25-angular_components.zip",
+			"recording": "https://uci.yuja.com/V/Video?v=14401469&a=191335952"
 		},
 		{
 			"date": "2025-10-28",
