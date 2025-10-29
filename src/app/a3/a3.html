@@ -10,12 +10,10 @@
     <p>A starter repository is on <a href="https://classroom.github.com/a/knLu7_vu">GitHub Classroom</a>. Note that if you complete the assignment as a pair, the privacy settings of the repository are such that you will not be able to add them yourself. Instead, one person can create the repository, and the other can join the pre-existing team by finding the team name on GitHub Classroom.</p>
     <h3>Repository structure</h3>
     <p>The repository contains somewhere around 80 files. You will not need to edit most of them in this assignment. The repository contains two folders: <code>webserver</code> and <code>client</code>. <code>webserver</code> includes the Express/Node.js backend for communicating with the Spotify API. <code>client</code> includes the Angular frontend for browsing music.</p>
-    <p>In the backend (<code>webserver</code> folder), you will not need to edit any of the JavaScript files; they are provided for you. However, you do need to create four files:</p>
+    <p>In the backend (<code>webserver</code> folder), you will not need to edit any of the JavaScript files; they are provided for you. However, you do need to create two files:</p>
     <ul>
        <li><code>client_secret.json</code></li>
        <li><code>tokens.json</code></li>
-       <li><code>selfsigned.crt</code></li>
-       <li><code>selfsigned.key</code></li>
     </ul>
     <p>Each of these files contain secret information, so they should not be committed to the repository and is therefore listed in the .gitignore file. (Which is also why we cannot provide them to you)</p>
     <p>In the frontend (<code>client</code> folder), the files which need editing are all under the <code>app</code> folder. Within that folder, the files/subfolders you should edit are:</p>
@@ -41,7 +39,7 @@
     <p>A Spotify Developer account is required to set up the Express webserver. Create a Spotify account or log in at <a href="https://developer.spotify.com/dashboard/">https://developer.spotify.com/dashboard/</a> and follow the instructions to create a client id. Name the app whatever you'd like. For the App description, enter:</p>
     <blockquote>This App is used to create a music browser as part of a course assignment for IN4MATX 133, User Interface Software, at the University of California, Irvine.</blockquote>
     <p>Indicate that you are building a Website and are not developing a commercial application.</p>
-    <p>Once you have created your application, be sure to set the redirect URI to <code>https://localhost:8888/callback</code>. This will tell Spotify to redirect back to our Express webserver once authentication and authorization is complete. You should also create a file in the <code>webserver</code> folder (not the <code>routes</code> folder), <code>client_secret.json</code>, with your consumer key and secret. It should be of the form:</p>
+    <p>Once you have created your application, be sure to set the redirect URI to <code>http://127.0.0.1:8888/callback</code>. This will tell Spotify to redirect back to our Express webserver once authentication and authorization is complete. You should also create a file in the <code>webserver</code> folder (not the <code>routes</code> folder), <code>client_secret.json</code>, with your consumer key and secret. It should be of the form:</p>
     <pre>{{ '{' }}
   "client_id": "Your Client Key",
   "client_secret": "Your Client Secret"
@@ -51,8 +49,7 @@
   "access_token": null,
   "refresh_token": null
  {{ '}' }} </pre>
-    <p>Finally, create a self-signed SSL certificate, consisting of two files <code>selfsigned.crt</code> and <code>selfsigned.key</code>. These files will be created by running this command in your webserver folder: <code>openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout ./selfsigned.key -out selfsigned.crt</code>. The web encryption supported by self-signing is beyond the scope of this class, and self-signing is not appropriate for production deployment. But it's fine to use for a proof-of-concept application like this one. Browsers may present warnings about the trustworthiness of the connection to your local server, which you can safely ignore.</p>
-    <p>To run the Express webserver, <code>cd</code> into the webserver folder and run <code>npm start</code>. This will start the webserver at <code>localhost:8888</code>. Be sure the dependencies have been installed first via <code>npm install</code>. If you navigate to this root page (<code>https://localhost:8888/</code>) in your browser, you'll likely get a error in your console suggesting that "No default engine was specified". This is because no endpoint is defined for the root page (see the <code>index.js</code> file to see the defined endpoints). If you open endpoints which are defined, like <code>https://localhost:8888/login</code>, you shouldn't get this error.</p>
+    <p>To run the Express webserver, <code>cd</code> into the webserver folder and run <code>npm start</code>. This will start the webserver at <code>127.0.0.1:8888</code>. Be sure the dependencies have been installed first via <code>npm install</code>. If you navigate to this root page (<code>http://127.0.0.1:8888/</code>) in your browser, you'll likely get a error in your console suggesting that "No default engine was specified". This is because no endpoint is defined for the root page (see the <code>index.js</code> file to see the defined endpoints). If you open endpoints which are defined, like <code>http://127.0.0.1:8888/login</code>, you shouldn't get this error.</p>
     <p>If you make a change to code in the webserver (which you should not need to do to complete the required portions of this assignment), you will have to end the running program and re-run it. End it by typing <code>Ctrl-C</code> into the command line and then re-running it with <code>npm start</code>.</p>
     <h4>Running the client</h4>
     <p>To run the Angular client, <code>cd</code> into the client folder and run <code>ng serve</code>. This will start the client at <code>localhost:4200</code>. Adding the <code>--open</code> flag will open it up in the browser. Be sure the dependencies have been installed first via <code>npm install</code>.</p>
