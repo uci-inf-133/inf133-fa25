@@ -361,7 +361,8 @@
 		{
 			"date": "2025-11-04",
 			"type": "lecture",
-			"title": "Hybrid & Native Architectures"
+			"title": "Hybrid & Native Architectures",
+			"link": "lectures/11_04_25-hybrid_native.pdf"
 		},
 		{
 			"date": "2025-11-04",
@@ -378,7 +379,9 @@
 		{
 			"date": "2025-11-06",
 			"type": "lecture",
-			"title": "Ionic Components"
+			"title": "Ionic Components",
+			"link": "lectures/11_06_25-ionic_components.pdf",
+			"demo": "demos/11_06_25-ionic_components.zip"
 		},
         {
 			"date": "2025-11-07",
