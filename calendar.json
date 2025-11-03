@@ -386,7 +386,7 @@
         {
 			"date": "2025-11-07",
 			"type": "discussion",
-			"title": "TA Office Hours (TBD)"
+			"title": "TA Office Hours (Weijun)"
 		},
 		{
 			"date": "2025-11-07",
@@ -412,7 +412,7 @@
         {
             "date": "2025-11-13",
             "type": "absence",
-            "title": "Professor Epstein @ NSF Panel"
+            "title": "Professor Epstein @ NSF Panel?"
         },
 		{
 			"date": "2025-11-13",
@@ -420,18 +420,19 @@
 			"title": "Mobile Design Principles & SASS",
 			"place": {
 				"time": null,
-				"location": "Pre-recorded"
-			}
+				"location": "Pre-recorded?"
+			},
+			"link": "lectures/11_13_25-mobile_sass.pdf"
 		},
         {
             "date": "2025-11-14",
             "type": "absence",
-            "title": "Professor Epstein @ NSF Panel"
+            "title": "Professor Epstein @ NSF Panel?"
         },
 		{
 			"date": "2025-11-14",
 			"type": "discussion",
-			"title": "TA Office Hours (TBD)"
+			"title": "TA Office Hours (Ziqi)"
 		},
 		{
 			"date": "2025-11-14",
@@ -473,7 +474,7 @@
         {
 			"date": "2025-11-21",
 			"type": "discussion",
-			"title": "Ionic Demo (TBD)"
+			"title": "Ionic Demo (Weijun)"
 		},
 		{
 			"date": "2025-11-21",
@@ -486,7 +487,7 @@
 		{
 			"date": "2025-11-25",
 			"type": "lecture",
-			"title": "Small & Large Displays"
+			"title": "GenAI and Interface Development"
 		},
 		{
 			"date": "2025-11-25",
@@ -519,7 +520,7 @@
         {
 			"date": "2025-12-02",
 			"type": "lecture",
-			"title": "Augmenting Reality & Conversation"
+			"title": "Beyond Web & Mobile"
 		},
 		{
 			"date": "2025-12-02",
@@ -541,7 +542,7 @@
 		{
 			"date": "2025-12-05",
 			"type": "discussion",
-			"title": "TA Office Hours (TBD)"
+			"title": "TA Office Hours (Ziqi)"
 		},
 		{
 			"date": "2025-12-05",
@@ -551,7 +552,7 @@
 			"date": "2025-12-10",
 			"type": "assignment",
 			"title": "A5",
-			"name": "TBD"
+			"name": "Material Widget Factory with GenAI"
 		}
 	]
 }
