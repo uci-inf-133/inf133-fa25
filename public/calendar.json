@@ -382,7 +382,8 @@
 			"type": "lecture",
 			"title": "Ionic Components",
 			"link": "lectures/11_06_25-ionic_components.pdf",
-			"demo": "demos/11_06_25-ionic_components.zip"
+			"demo": "demos/11_06_25-ionic_components.zip",
+			"recording": "https://uci.yuja.com/V/Video?v=14478025&a=48727612"
 		},
         {
 			"date": "2025-11-07",
