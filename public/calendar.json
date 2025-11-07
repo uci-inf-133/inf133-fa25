@@ -411,26 +411,11 @@
 			"date": "2025-11-13",
 			"type": "officehours_kaylee"
 		},
-        {
-            "date": "2025-11-13",
-            "type": "absence",
-            "title": "Professor Epstein @ NSF Panel?"
-        },
 		{
 			"date": "2025-11-13",
 			"type": "lecture",
-			"title": "Mobile Design Principles & SASS",
-			"place": {
-				"time": null,
-				"location": "Pre-recorded?"
-			},
-			"link": "lectures/11_13_25-mobile_sass.pdf"
+			"title": "Mobile Design Principles & SASS"
 		},
-        {
-            "date": "2025-11-14",
-            "type": "absence",
-            "title": "Professor Epstein @ NSF Panel?"
-        },
 		{
 			"date": "2025-11-14",
 			"type": "discussion",
