@@ -504,7 +504,8 @@
 			"date": "2025-12-01",
 			"type": "assignment",
 			"title": "A4",
-			"name": "Sleep Tracker in Ionic"
+			"name": "Sleep Tracker in Ionic",
+			"link": "assignments/a4"
 		},
         {
 			"date": "2025-12-02",
