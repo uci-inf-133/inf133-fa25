@@ -444,7 +444,8 @@
 			"type": "lecture",
 			"title": "Device Resources & Sensors",
 			"link": "lectures/11_18_25-device_resources.pdf",
-			"demo": "demos/11_18_25-device_resources.zip"
+			"demo": "demos/11_18_25-device_resources.zip",
+			"recording": "https://uci.yuja.com/V/Video?v=14580018&a=37776074"
 		},
 		{
 			"date": "2025-11-18",
