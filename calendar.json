@@ -482,7 +482,9 @@
 		{
 			"date": "2025-11-25",
 			"type": "lecture",
-			"title": "GenAI and Interface Development"
+			"title": "GenAI and Interface Development",
+			"link": "lectures/11_25_25-genai_interface.pdf",
+			"demo": "demos/11_25_25-genai_interface.zip"
 		},
 		{
 			"date": "2025-11-25",
