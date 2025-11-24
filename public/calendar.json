@@ -552,7 +552,8 @@
 			"date": "2025-12-10",
 			"type": "assignment",
 			"title": "A5",
-			"name": "Material Widget Factory with GenAI"
+			"name": "Material Widget Factory with GenAI",
+			"link": "assignments/a5"
 		}
 	]
 }
