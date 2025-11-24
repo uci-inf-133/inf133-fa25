@@ -5,9 +5,7 @@
     <p>This is an <strong>individual</strong> assignment.</p>
     <p>In prior assignments, you have largely been tasked with picking up the fundamentals of web and mobile development on your own, which has helped you build up a strong foundation in their principles. This assignment provides an opportunity to explore how Large Language Models (LLMs) can assist with typical interface development tasks. You will use an LLM to help you understand and apply a professional design system to a starter website. The goal is to learn how to effectively collaborate with LLMs in the design and development process. You will write less code in this assignment than past assignments, and the coding task is not as extensive. Instead, this assignment aims to provide a lens into the benefits and limitations to leveraging LLMs for developing user interfaces.</p>
 
-    <p>You are required to complete this assignment using <a href="https://zotgpt.uci.edu/zotgpt/">ZotGPT</a> chat. You may choose any model within ZotGPT (e.g., Claude, Gemini, or GPT-5). You're welcome to use multiple models and compare their output, but to complete the assignment you only need to use one.</p>
-
-    <p><strong>Important restrictions:</strong></p>
+    <p>You are required to complete this assignment using <a href="https://zotgpt.uci.edu/zotgpt/">ZotGPT</a> chat. You may choose any model within ZotGPT (e.g., Claude, Gemini, or GPT-5). You're welcome to use multiple models and compare their output, but to complete the assignment you only need to use one. To summarize:</p>
     <ul>
         <li>You <strong>may NOT</strong> use AI coding tools such as Cursor, GitHub Copilot, Claude Code, or any other AI-powered IDEs or code completion tools. These tools may be useful fur similar tasks in the future, but requiring use of a chat-based LLM will require more reflection on what is being generated.</li>
         <li>You <strong>must</strong> use only the ZotGPT chat interface for all LLM interactions. Compared with public models like ChatGPT, ZotGPT has the added benefit of ensuring that your prompts remain private and are not used for future training.</li>
@@ -16,7 +14,7 @@
 
     <p><strong>Read the reflection questions before you start!</strong> Half of the points for this assignment relate to your reflections on the use of LLMs for interface development. Before you begin working on the assignment, you may find it helpful to read the reflection questions in the <a href="https://docs.google.com/document/d/1rqNciSYHb_0hUorbwIMPuEBNcJavQVFeEQFoyXPtlTw/edit?usp=sharing">Reflection Questions Google Doc</a> (make a copy for your own responses). These questions will guide your thinking as you work with the LLM.</p>
 
-    <h2>Working with the LLM</h2>
+    <h3>Working with the LLM</h3>
     <p>You will write very little code yourself in this assignment. Instead, you will rely on ZotGPT to generate the code which applies the design system to the starter website. You may have to correct the generated code, or further refine your prompts to clarify your intentions. But compared to prior assignments, you will do significantly less coding yourself.</p>
     <p>Throughout this assignment, use ZotGPT to help you:</p>
     <ul>
@@ -31,6 +29,7 @@
     <p>Throughout this assignment, you must keep a log of all your prompts to the LLM. We provide an optional browser-based <strong>Prompt Logger</strong> (<code>prompt-logger.html</code>) to assist with this. The prompt logger can help you track and organize all your LLM prompts, and can export your log as a formatted text file for easy submission. Alternatively, you can manually create a <code>prompts.txt</code> file. After each interaction with ZotGPT, copy and paste your prompt, include which LLM model you used, and optionally include a brief note about the response or outcome.</p>
 
     <h2>A Tour of the Starter Website</h2>
+    <p>A starter repository is on <a href="https://classroom.github.com/a/mnGgv3bd">GitHub Classroom</a>.</p>
     <p>You will work with an LLM to transform this basic starter webpage by applying professional design systems and customizing it with your own creative touches. First, let's understand what you're working with.</p>
 
     <!-- <p>We have provided functional implementations in the <code>default_html</code> and <code>default2_html</code> folders. These serve as examples of completed assignments and reference for the functionality you should support. There are three main pages you'll be working with:</p> -->
@@ -72,6 +71,7 @@
     <p><strong>A note on Functionality:</strong> If you inadvertently break some functionality during your implementation, we will not deduct points. The focus of this assignment is on learning how LLMs can help you understand and apply design systems, not on debugging. Focus your energy on exploring how to effectively collaborate with LLMs in the design and development process. That said, issues that arise could be important topics to incorporate into your reflection.</p>
 
     <h2>Starter Code</h2>
+
     <h3>Repository Structure</h3>
     <p>In the <code>widget_factory</code> folder, we have provided several files and folders to help you complete this assignment:</p>
     <p>The files you <em>should not</em> need to edit are:</p>
@@ -120,13 +120,12 @@
 
     <!-- <p>Refer to the <code>default_html</code> or <code>default2_html</code> folders to see how these IDs are used in practice.</p> -->
 
-    <h2>Part 1: Understanding and Applying a Design System with LLMs (2 points)</h2>
+    <h2>Requirements</h2>
+
+    <h3>Part 1: Understanding and Applying a Design System with LLMs (2 points)</h3>
     <p>For the first part of this assignment, you will use ZotGPT to generate code which applies the <a href="https://m3.material.io/">Material Design</a> design system to your starter website using an LLM to help you understand and implement the system's principles. Material Design is Google's comprehensive design system that provides guidance on components, color, typography, spacing, and interaction patterns. You can start by exploring the <a href="https://www.mdui.org/en/">MDUI</a> component library, which provides an implementation of Material Design via Web Components.</p>
 
-    <h3>Requirements</h3>
-
-    <p>With the help of ZotGPT, implement at least 5 different elements from MDUI for the website. We recommend considering components such as <strong>layout</strong>, <strong>top app bar</strong>, <strong>buttons</strong>, <strong>cards</strong>, <strong>text fields</strong>, and <strong>select menu</strong>.</p>
-    <p>You can refer to the <a href="https://www.mdui.org/en/docs/2/">MDUI Documentation</a> for the complete list of components, and apply ones you think are appropriate. The Material Design components will provide a basic structure and look. In Part 2, you will customize the colors, fonts, and spacing to make the design your own.</p>
+    <p>With the help of ZotGPT, implement at least 5 different elements from MDUI for the website. We recommend considering components such as <strong>layout</strong>, <strong>top app bar</strong>, <strong>buttons</strong>, <strong>cards</strong>, <strong>text fields</strong>, and <strong>select menu</strong>. You can refer to the <a href="https://www.mdui.org/en/docs/2/">MDUI Documentation</a> for the complete list of components, and apply ones you think are appropriate. The Material Design components will provide a basic structure and look. In Part 2, you will customize the colors, fonts, and spacing to make the design your own.</p>
 
     <p>Here is an example of the website after applying MDUI elements:</p>
     <p>
@@ -146,12 +145,11 @@
 
     <!-- <p><strong>Important:</strong> Keep all required HTML <code>id</code> attributes (e.g., <code>toyboat_quantity</code>, <code>address</code>, <code>shipping_speed</code>) so the JavaScript functionality continues to work. Refer to <code>default_html</code> folder for examples of how these components are used.</p> -->
 
-    <h2>Part 2: Customizing with Your Own Style Guide (1 point)</h2>
+    <h3>Part 2: Customizing with Your Own Style Guide (1 point)</h3>
     <p>In this part, you will use ZotGPT to help define and apply your own custom style guide for colors, typography, and spacing. This is where you add your creative touch to the project and make the Material Design components look unique. You will primarily edit the <code>style.css</code> file to implement your custom design system. This part builds directly on Part 1. You should keep the Material Design components (buttons, cards, text fields, etc.) from Part 1, but customize their appearance with your own colors, fonts, and spacing. Through this, you are "reskinning" or "theming" the Material Design components with your personal aesthetic.</p>
 
     <p>A reminder to <strong>focus on learning</strong>. The goal is to practice defining and applying your own design decisions with the help of an LLM. If some aspects don't work perfectly, that's okay. We're evaluating your effort and design thinking, not perfect execution. Continue documenting all your prompts to the LLM as you work on this part.</p>
 
-    <h3>Creating Your Style Guide</h3>
     <!-- <p>Use the LLM to help you:</p>
     <ul>
         <li><strong>Define a color palette</strong>: Ask the LLM to suggest or generate a cohesive color scheme. You can request specific moods or themes (e.g., "professional," "playful," "minimalist"). The LLM can also recommend online tools for generating color palettes (e.g., <a href="https://coolors.co/">Coolors</a>, <a href="https://color.adobe.com/">Adobe Color</a>).</li>
@@ -159,7 +157,6 @@
         <li><strong>Define spacing and layout</strong>: Establish your own spacing system and layout patterns to create visual rhythm and consistency.</li>
     </ul> -->
 
-    <h3>Requirements</h3>
     <p>Your code generated by ZotGPT must implement the following:</p>
     <ul>
         <li>A <strong>Color System</strong>: Create a consistent color scheme using design tokens (CSS custom properties). You should:
@@ -198,10 +195,9 @@
     <p><img src="assignments/a5_color_typography.png" alt="Example of the website using color and typography system" class="demo"></p>
     <p>In this example, the website uses a light pink color for the main background, a different light pink color for cards, dark grey for title text and black for body text. These colors form a theme, and estabilish high contrast for readability. A sans-serif font is used for text and different font sizes are applied to elements for a typographic hierarchy.</p>
 
-    <h2>Part 3: Extending with Advanced Features (1 point)</h2>
+    <h3>Part 3: Extending with Advanced Features (1 point)</h3>
     <p>In this final part, you will will use ZotGPT to generate code which adds advanced features to demonstrate mastery of responsive design and theme switching. Continue documenting all your prompts to the LLM as you work on these advanced features. Again, <strong>focus on learning</strong>. These are advanced features that may be challenging to work with an LLM to implement. We're looking for genuine effort and problem-solving. If you run into technical issues (e.g., dark mode doesn't work on one page, or responsive layout isn't perfect), document what you tried in your prompt log. We value the learning process over a fully-working design.</p>
 
-    <h3>Requirements</h3>
     <p>Work with ZotGPT to implement the following:</p>
     <ul>
         <li><strong>Responsive design</strong>: Make your webpage look good on both mobile and desktop devices, and responsive to different screen sizes. Your implementation will be assessed following the same approach as A1.
@@ -220,31 +216,29 @@
             <p>In these examples, the website begins in dark mode. The colors are adjusted to have high contrast and readable in dark mode. The user is able to switch between light and dark modes using the button on the right side.</p>
     </ul>
 
-    <h2>Bonus Part: Alternative Design System (up to 2 points)</h2>
+    <h3>Bonus Part: Alternative Design System (up to 2 points)</h3>
     <p>For bonus credit, you can apply use ZotGPT to apply a different professional design system to the same starter code and complete all the requirements (Parts 1-3) using that system. This gives you hands-on experience comparing different design systems and understanding their trade-offs. For bonus credit, start fresh with the original starter code and apply either the <strong>Atlassian Design System</strong> or <strong>Fluent 2 Design System</strong> (choose one). Work with an LLM to complete the entire implementation process, just as you did with Material Design.</p>
 
-    <h3>Choose Your Design System</h3>
     <p>Select one of the following design systems:</p>
     <ul>
         <li><strong>Atlassian Design System</strong>: Atlassian's design system used in products like Jira, Confluence, and Trello. Explore the <a href="https://atlassian.design/">Atlassian Design System</a> and its component library.</li>
         <li><strong>Fluent 2 Design System</strong>: Microsoft's modern design system used in products like Microsoft 365, Teams, and Windows. Explore the <a href="https://fluent2.microsoft.design/">Fluent 2 Design System</a> and its <a href="https://react.fluentui.dev/">Fluent UI React components</a>.</li>
     </ul>
 
-    <h3>Requirements</h3>
     <p>Using your chosen design system, complete all three parts of the assignment (understanding and applying components, customizing with your own style guide, and implementing advanced features like responsive design and dark mode).</p>
 
-    <h3>Deliverables for Bonus</h3>
+    <p>For the bonus part, be sure to turn in:</p>
     <ul>
         <li><strong>Separate implementation</strong>: Create a separate folder (e.g., <code>bonus_atlassian</code> or <code>bonus_fluent</code>) containing your alternative design system implementation</li>
         <li><strong>Separate prompt log</strong>: Include a separate prompt log file (e.g., <code>prompts_bonus.txt</code>) documenting your work with the alternative design system</li>
         <li><strong>Comparison in reflection</strong>: Answer the <a href="https://docs.google.com/document/d/1rqNciSYHb_0hUorbwIMPuEBNcJavQVFeEQFoyXPtlTw/edit?usp=sharing">Reflection Questions document</a> for the new design system. Additionally, add the following question and answer it: <em>"Compare your experience using LLMs to implement the two different design systems. How did working with the LLM differ between Material Design and your chosen alternative system?"</em></li>
     </ul>
 
-    <h2>Submission</h2>
+    <h3>Submission</h3>
 
     <p>To submit, zip your repository and upload it to <a href="https://canvas.eee.uci.edu/courses/76736/assignments/1675840">Canvas</a>. Please be sure to complete the <code>readme.txt</code>, add the <code>prompts.txt</code> record of your ZotGPT prompts, and a PDF export of the Reflection Questions Google Doc as <code>reflection_questions.pdf</code>. Any late uploads are subject to the course's <a href="/syllabus#duedates">late policy</a>.</p>
 
-    <h2>Grading</h2>
+    <h3>Grading</h3>
     <p>This assignment will be graded on a scale of 10 points, with the possibility of 2 bonus points, broken down as follows:</p>
     <ul>
        <li>Material Design Components (2 points)</li>
