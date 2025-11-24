@@ -1,1 +1,261 @@
-<p>a5 works!</p>
+<main class="container-fluid">
+    <p class="tbd">This assignment is brand new for Fall 2025, and as a result my be ambiguous or have bugs.</p>
+    <h1>{{assignment.title}}: {{assignment.name}}</h1>
+    <h3>Due {{assignment.due}} PST</h3>
+    <p>This is an <strong>individual</strong> assignment.</p>
+    <p>In prior assignments, you have largely been tasked with picking up the fundamentals of web and mobile development on your own, which has helped you build up a strong foundation in their principles. This assignment provides an opportunity to explore how Large Language Models (LLMs) can assist with typical interface development tasks. You will use an LLM to help you understand and apply a professional design system to a starter website. The goal is to learn how to effectively collaborate with LLMs in the design and development process. You will write less code in this assignment than past assignments, and the coding task is not as extensive. Instead, this assignment aims to provide a lens into the benefits and limitations to leveraging LLMs for developing user interfaces.</p>
+
+    <p>You are required to complete this assignment using <a href="https://zotgpt.uci.edu/zotgpt/">ZotGPT</a> chat. You may choose any model within ZotGPT (e.g., Claude, Gemini, or GPT-5). You're welcome to use multiple models and compare their output, but to complete the assignment you only need to use one.</p>
+
+    <p><strong>Important restrictions:</strong></p>
+    <ul>
+        <li>You <strong>may NOT</strong> use AI coding tools such as Cursor, GitHub Copilot, Claude Code, or any other AI-powered IDEs or code completion tools. These tools may be useful fur similar tasks in the future, but requiring use of a chat-based LLM will require more reflection on what is being generated.</li>
+        <li>You <strong>must</strong> use only the ZotGPT chat interface for all LLM interactions. Compared with public models like ChatGPT, ZotGPT has the added benefit of ensuring that your prompts remain private and are not used for future training.</li>
+        <li>You <strong>may NOT</strong> use LLMs to write your reflection answers. The reflection questions must be written by you, based on your own experience and thoughts.</li>
+    </ul>
+
+    <p><strong>Read the reflection questions before you start!</strong> Half of the points for this assignment relate to your reflections on the use of LLMs for interface development. Before you begin working on the assignment, you may find it helpful to read the reflection questions in the <a href="https://docs.google.com/document/d/1rqNciSYHb_0hUorbwIMPuEBNcJavQVFeEQFoyXPtlTw/edit?usp=sharing">Reflection Questions Google Doc</a> (make a copy for your own responses). These questions will guide your thinking as you work with the LLM.</p>
+
+    <h2>Working with the LLM</h2>
+    <p>You will write very little code yourself in this assignment. Instead, you will rely on ZotGPT to generate the code which applies the design system to the starter website. You may have to correct the generated code, or further refine your prompts to clarify your intentions. But compared to prior assignments, you will do significantly less coding yourself.</p>
+    <p>Throughout this assignment, use ZotGPT to help you:</p>
+    <ul>
+        <li>Explain design system concepts like color systems, typography, spacing, and elevation.</li>
+        <li>Suggest appropriate components for your webpage (e.g., buttons, cards, navigation).</li>
+        <li>Generate HTML and CSS code that applies design principles.</li>
+        <li>Describe problems and ask for solutions.</li>
+        <li>Iterate on designs and refine the implementation.</li>
+    </ul>
+
+    <h3>Documenting Your Process</h3>
+    <p>Throughout this assignment, you must keep a log of all your prompts to the LLM. We provide an optional browser-based <strong>Prompt Logger</strong> (<code>prompt-logger.html</code>) to assist with this. The prompt logger can help you track and organize all your LLM prompts, and can export your log as a formatted text file for easy submission. Alternatively, you can manually create a <code>prompts.txt</code> file. After each interaction with ZotGPT, copy and paste your prompt, include which LLM model you used, and optionally include a brief note about the response or outcome.</p>
+
+    <h2>A Tour of the Starter Website</h2>
+    <p>You will work with an LLM to transform this basic starter webpage by applying professional design systems and customizing it with your own creative touches. First, let's understand what you're working with.</p>
+
+    <!-- <p>We have provided functional implementations in the <code>default_html</code> and <code>default2_html</code> folders. These serve as examples of completed assignments and reference for the functionality you should support. There are three main pages you'll be working with:</p> -->
+
+    <h3>Order Page (index.html)</h3>
+    <p>The main page displays four types of widgets that customers can order: a Toy Boat, a Paper Plane, a Stuffed Animal, and a Train Car. Each widget includes:</p>
+    <ul>
+        <li>An image of the widget</li>
+        <li>Price information</li>
+        <li>Rating (out of 5 stars)</li>
+        <li>Input fields for quantity (0-10) and custom color selection</li>
+    </ul>
+    <img width="250px" class="image" src="assignments/a5_order.png" alt="The Order page showing the four widgets available for purchase with their prices, ratings, and customization options.">
+
+    <h3>Shipping Page (shipping.html)</h3>
+    <p>After selecting widgets, customers enter their shipping information including:</p>
+    <ul>
+        <li>Street address</li>
+        <li>City, State, and ZIP code</li>
+        <li>Shipping speed selection (Express, Standard, or Slow, each with different costs)</li>
+    </ul>
+    <p>A loading indicator appears while the order is being processed (approximately 2 seconds).</p>
+    <img width="500px" class="image" src="assignments/a5_shipping.png" alt="The Shipping page with form fields for address information and shipping speed options.">
+
+    <h3>Summary Page (summary.html)</h3>
+    <p>Finally, the order summary displays:</p>
+    <ul>
+        <li>Total number of widgets ordered</li>
+        <li>Breakdown by widget type (quantity and color)</li>
+        <li>Subtotals for each widget type</li>
+        <li>Shipping information and cost</li>
+        <li>Total cost</li>
+        <li>Expected arrival date</li>
+    </ul>
+    <img width="400px" class="image" src="assignments/a5_summary.png" alt="The Order Summary page showing all order details and total cost.">
+
+    <p>Your goal is to apply design system principles to improve the visual design and user experience of these pages while maintaining all functionality.</p>
+
+    <p><strong>A note on Functionality:</strong> If you inadvertently break some functionality during your implementation, we will not deduct points. The focus of this assignment is on learning how LLMs can help you understand and apply design systems, not on debugging. Focus your energy on exploring how to effectively collaborate with LLMs in the design and development process. That said, issues that arise could be important topics to incorporate into your reflection.</p>
+
+    <h2>Starter Code</h2>
+    <h3>Repository Structure</h3>
+    <p>In the <code>widget_factory</code> folder, we have provided several files and folders to help you complete this assignment:</p>
+    <p>The files you <em>should not</em> need to edit are:</p>
+    <ul>
+        <li><code>shipping_data.js</code> and <code>widgets_data.js</code>: Data files with prices, ratings for widgets, and shipping costs and duration.</li>
+        <li>The <code>favicon.ico</code> Favicon.</li>
+        <li>The <code>images</code> folder, containing images of the four widgets available for purchase.</li>
+    </ul>
+
+    <p>With the help of ZotGPT, the files you <em>should</em> edit are:</p>
+    <ul>
+        <li><code>index.html</code>: The HTML file for the order page where customers select widgets and colors.</li>
+        <li><code>shipping.html</code>: The HTML file for the shipping page where customers enter shipping details.</li>
+        <li><code>summary.html</code>: The HTML file for the order summary page showing the complete order.</li>
+        <li><code>style.css, light.css, dark.css</code>: The CSS files to style all three pages and implement light and dark modes.</li>
+        <li><code>script.js</code>: Contains all coding logic for storing widget and shipping information between pages and calculating costs.</li>
+    </ul>
+
+    <p>You will also edit the <a href="https://docs.google.com/document/d/1rqNciSYHb_0hUorbwIMPuEBNcJavQVFeEQFoyXPtlTw/edit?usp=sharing">Reflection Questions Google Doc</a> on your own. Fill in your answers, download as a PDF, and submit.</p>
+
+    <!-- <h3>Important HTML IDs for Functionality</h3>
+    <p>The provided <code>script.js</code> expects specific HTML <code>id</code> attributes to make the pages function correctly:</p>
+
+    <p><strong>On the order page (index.html)</strong>, the coding logic expects these input field IDs:</p>
+    <ul>
+        <li><code>toyboat_quantity</code>, <code>toyboat_color</code></li>
+        <li><code>paperplane_quantity</code>, <code>paperplane_color</code></li>
+        <li><code>stuffedanimal_quantity</code>, <code>stuffedanimal_color</code></li>
+        <li><code>traincar_quantity</code>, <code>traincar_color</code></li>
+    </ul>
+
+    <p><strong>On the shipping page (shipping.html)</strong>, these IDs are expected:</p>
+    <ul>
+        <li><code>address</code>, <code>city</code>, <code>state</code>, <code>zip</code></li>
+        <li><code>shipping_speed</code></li>
+        <li><code>loading_progress</code> (optional): An element with the <code>hidden</code> attribute that shows while processing</li>
+    </ul>
+
+    <p><strong>On the summary page (summary.html)</strong>, the coding logic populates these IDs:</p>
+    <ul>
+        <li>Same <code>*_quantity</code> and <code>*_color</code> IDs for each widget type</li>
+        <li><code>*_subtotal</code>: For the total cost of each widget type</li>
+        <li><code>address</code>, <code>city</code>, <code>state</code>, <code>zip</code>, <code>shipping_speed</code>, <code>shipping_subtotal</code></li>
+        <li><code>arrival_date</code>: When the package will arrive</li>
+    </ul> -->
+
+    <!-- <p>Refer to the <code>default_html</code> or <code>default2_html</code> folders to see how these IDs are used in practice.</p> -->
+
+    <h2>Part 1: Understanding and Applying a Design System with LLMs (2 points)</h2>
+    <p>For the first part of this assignment, you will use ZotGPT to generate code which applies the <a href="https://m3.material.io/">Material Design</a> design system to your starter website using an LLM to help you understand and implement the system's principles. Material Design is Google's comprehensive design system that provides guidance on components, color, typography, spacing, and interaction patterns. You can start by exploring the <a href="https://www.mdui.org/en/">MDUI</a> component library, which provides an implementation of Material Design via Web Components.</p>
+
+    <h3>Requirements</h3>
+
+    <p>With the help of ZotGPT, implement at least 5 different elements from MDUI for the website. We recommend considering components such as <strong>layout</strong>, <strong>top app bar</strong>, <strong>buttons</strong>, <strong>cards</strong>, <strong>text fields</strong>, and <strong>select menu</strong>.</p>
+    <p>You can refer to the <a href="https://www.mdui.org/en/docs/2/">MDUI Documentation</a> for the complete list of components, and apply ones you think are appropriate. The Material Design components will provide a basic structure and look. In Part 2, you will customize the colors, fonts, and spacing to make the design your own.</p>
+
+    <p>Here is an example of the website after applying MDUI elements:</p>
+    <p>
+    <img src="assignments/a5_mdui.gif" class="demo" alt="Example of the website using MDUI Material Design components">    </p>
+    <p>In this example, the website uses card, text field, button, table, and menu components from the MDUI library. The features of the website remain the same as the original website, but the design is improved with the MDUI components.</p>
+
+<!-- 
+    <ul>
+        <li><strong>Layout</strong> (<code>&lt;mdui-layout&gt;</code>, <code>&lt;mdui-layout-main&gt;</code>, <code>&lt;mdui-layout-item&gt;</code>) – Use for overall page structure. See <a href="https://www.mdui.org/en/docs/2/components/layout">Layout docs</a>.</li>
+        <li><strong>Top App Bar</strong> (<code>&lt;mdui-top-app-bar&gt;</code>) – Use for page headers and navigation. See <a href="https://www.mdui.org/en/docs/2/components/top-app-bar">TopAppBar docs</a>.</li>
+        <li><strong>Buttons</strong> (<code>&lt;mdui-button&gt;</code>) – Use for "Check Out", "Place Order", and theme toggle buttons. See <a href="https://www.mdui.org/en/docs/2/components/button">Button docs</a>.</li>
+        <li><strong>Cards</strong> (<code>&lt;mdui-card&gt;</code>) – Use for displaying product widgets (Toy Boat, Paper Plane, Stuffed Animal, Train Car). See <a href="https://www.mdui.org/en/docs/2/components/card">Card docs</a>.</li>
+        <li><strong>Text Fields</strong> (<code>&lt;mdui-text-field&gt;</code>) – Use for shipping form fields (<code>address</code>, <code>city</code>, <code>state</code>, <code>zip</code>). Can also be used for quantity inputs with <code>type="number"</code>. See <a href="https://www.mdui.org/en/docs/2/components/text-field">TextField docs</a>. <strong>Note:</strong> MDUI does not support <code>type="color"</code>, so you must keep the native <code>&lt;input type="color"&gt;</code> for color pickers.</li>
+        <li><strong>Select Menu</strong> (<code>&lt;mdui-select&gt;</code> with <code>&lt;mdui-menu-item&gt;</code> options) – Use for shipping speed selection (<code>shipping_speed</code>: Express, Standard, Slow). Make sure the <code>id</code> attribute is on the <code>&lt;mdui-select&gt;</code> element. See <a href="https://www.mdui.org/en/docs/2/components/select">Select docs</a> and <a href="https://www.mdui.org/en/docs/2/components/menu">Menu docs</a>.</li>
+        <li><strong>Other options</strong>: You may explore additional components such as <a href="https://www.mdui.org/en/docs/2/components/circular-progress">Circular Progress</a> (for loading indicators), <a href="https://www.mdui.org/en/docs/2/components/icon">Icons</a> (for star ratings or other visual elements), <a href="https://www.mdui.org/en/docs/2/components/radio">Radio buttons</a> (alternative to Select), <a href="https://www.mdui.org/en/docs/2/components/chip">Chips</a>, <a href="https://www.mdui.org/en/docs/2/components/badge">Badges</a>, or any other MDUI components that enhance your design.</li>
+    </ul> -->
+
+    <!-- <p><strong>Important:</strong> Keep all required HTML <code>id</code> attributes (e.g., <code>toyboat_quantity</code>, <code>address</code>, <code>shipping_speed</code>) so the JavaScript functionality continues to work. Refer to <code>default_html</code> folder for examples of how these components are used.</p> -->
+
+    <h2>Part 2: Customizing with Your Own Style Guide (1 point)</h2>
+    <p>In this part, you will use ZotGPT to help define and apply your own custom style guide for colors, typography, and spacing. This is where you add your creative touch to the project and make the Material Design components look unique. You will primarily edit the <code>style.css</code> file to implement your custom design system. This part builds directly on Part 1. You should keep the Material Design components (buttons, cards, text fields, etc.) from Part 1, but customize their appearance with your own colors, fonts, and spacing. Through this, you are "reskinning" or "theming" the Material Design components with your personal aesthetic.</p>
+
+    <p>A reminder to <strong>focus on learning</strong>. The goal is to practice defining and applying your own design decisions with the help of an LLM. If some aspects don't work perfectly, that's okay. We're evaluating your effort and design thinking, not perfect execution. Continue documenting all your prompts to the LLM as you work on this part.</p>
+
+    <h3>Creating Your Style Guide</h3>
+    <!-- <p>Use the LLM to help you:</p>
+    <ul>
+        <li><strong>Define a color palette</strong>: Ask the LLM to suggest or generate a cohesive color scheme. You can request specific moods or themes (e.g., "professional," "playful," "minimalist"). The LLM can also recommend online tools for generating color palettes (e.g., <a href="https://coolors.co/">Coolors</a>, <a href="https://color.adobe.com/">Adobe Color</a>).</li>
+        <li><strong>Customize typography</strong>: Choose custom fonts and create your own type hierarchy that complements your color scheme. Ask the LLM to suggest font pairings from <a href="https://fonts.google.com/">Google Fonts</a> or other font libraries.</li>
+        <li><strong>Define spacing and layout</strong>: Establish your own spacing system and layout patterns to create visual rhythm and consistency.</li>
+    </ul> -->
+
+    <h3>Requirements</h3>
+    <p>Your code generated by ZotGPT must implement the following:</p>
+    <ul>
+        <li>A <strong>Color System</strong>: Create a consistent color scheme using design tokens (CSS custom properties). You should:
+            <ul>
+                <li>Define at least 5 colors with clear purposes, such as primary, secondary, background, text, accent in your stylesheets. </li>
+                <li>Use color tokens and css variables in your stylesheets (e.g., don't hardcode colors like <code>#ff0000</code> in multiple places) Apply these variables throughout your CSS and use them across the components and pages.</li>
+                <li>Ensure text has sufficient contrast: &ge;4.5:1 for normal text, &ge;3:1 for large text (18px+ or 14px+ bold).</li>
+            </ul>
+            <img src="assignments/a5_color_system.jpg" alt="Example of the website using color system" class="demo"> 
+            <figcaption>Picture from: <a href="https://medium.com/@mewomewoliu/build-a-design-system-from-0-to-1-color-system-3a322827ada6">Build a Design System from 0 to 1: Color System</a>.</figcaption>
+            <p>See <a href="https://m3.material.io/styles/color/system/overview">Material 3 Color System</a> for design principles and <a href="https://m3.material.io/styles/color/system/accessibility">Material Accessibility Guidelines</a> for contrast requirements</p>
+        </li>
+        <li><strong>Typography</strong>: Apply a typography system for visual clarity. You should:
+                <ul>
+                <li>Choose and import custom fonts. <a href="https://fonts.google.com/">Google Fonts</a> is one of the examples of how fonts may look like.</li>
+                <li>Apply different font families, sizes, and weights for different element types in your stylesheets. Create a clear visual hierarchy between at least 5 different elements such as titles, headings, body text.</li>
+                <li>Apply typography consistently across all pages.</li>
+            </ul>
+            <p>Example of typography hierarchy:</p>
+                <p><img src="assignments/a5_typography_hierarchy.jpg" alt="Example of the website using typography" class="demo"></p> 
+                <figcaption>Picture from: <a href="https://unmatchedstyle.com/news/the-power-of-typographic-hierarchy-in-graphic-design.php">The Power of Typographic Hierarchy in Graphic Design</a>.</figcaption>
+    
+            <p>See <a href="https://m3.material.io/styles/typography/type-scale-tokens">Material Typography Tokens</a> for guidance.</p>
+
+        </li>
+        <!-- <li><strong>Document your style guide</strong>: In <code>readme.txt</code>, briefly describe your style choices and reasoning. Include:
+            <ul>
+                <li>Your chosen color palette and why you selected these colors (e.g., "I chose a blue and green palette to convey trust and growth")</li>
+                <li>Your font choices and how they complement your design (e.g., "I paired a serif font for headings with a sans-serif font for body text to create contrast")</li>
+                <li>Any specific design inspirations or themes you followed</li>
+            </ul>
+        </li> -->
+    </ul>
+
+    <p>Here is an example of website using a color and typography system:</p>
+    <p><img src="assignments/a5_color_typography.png" alt="Example of the website using color and typography system" class="demo"></p>
+    <p>In this example, the website uses a light pink color for the main background, a different light pink color for cards, dark grey for title text and black for body text. These colors form a theme, and estabilish high contrast for readability. A sans-serif font is used for text and different font sizes are applied to elements for a typographic hierarchy.</p>
+
+    <h2>Part 3: Extending with Advanced Features (1 point)</h2>
+    <p>In this final part, you will will use ZotGPT to generate code which adds advanced features to demonstrate mastery of responsive design and theme switching. Continue documenting all your prompts to the LLM as you work on these advanced features. Again, <strong>focus on learning</strong>. These are advanced features that may be challenging to work with an LLM to implement. We're looking for genuine effort and problem-solving. If you run into technical issues (e.g., dark mode doesn't work on one page, or responsive layout isn't perfect), document what you tried in your prompt log. We value the learning process over a fully-working design.</p>
+
+    <h3>Requirements</h3>
+    <p>Work with ZotGPT to implement the following:</p>
+    <ul>
+        <li><strong>Responsive design</strong>: Make your webpage look good on both mobile and desktop devices, and responsive to different screen sizes. Your implementation will be assessed following the same approach as A1.
+        </li>
+        <p>
+            <img src="assignments/a5_responsive_demo1.gif" alt="First example of the website being responsive on different screen sizes" class="demo">''
+            <img src="assignments/a5_responsive_demo2.gif" alt="Second example of the website being responsive on different screen sizes" class="demo">''
+            </p>
+            <p>In these examples, the website is responsive on different screen sizes tested with Google Chrome DevTools. The layout and content adjust to fit the screen size, and the text and images are readable on both mobile and desktop devices.</p>
+        <li><strong>Dark Mode</strong>: Create a dark theme and implement theme switching. You should edit the css file for the dark mode, and add a button to switch between light and dark modes in the top app bar. Please make sure the dark mode is applied to all pages and text is still readable in dark mode.
+        </li> 
+        <p>
+            <img src="assignments/a5_dark_mode_demo1.gif" alt="First example of the website being in dark mode" class="demo">
+            <img src="assignments/a5_dark_mode_demo2.gif" alt="Second example of the website being in dark mode" class="demo">
+            </p>
+            <p>In these examples, the website begins in dark mode. The colors are adjusted to have high contrast and readable in dark mode. The user is able to switch between light and dark modes using the button on the right side.</p>
+    </ul>
+
+    <h2>Bonus Part: Alternative Design System (up to 2 points)</h2>
+    <p>For bonus credit, you can apply use ZotGPT to apply a different professional design system to the same starter code and complete all the requirements (Parts 1-3) using that system. This gives you hands-on experience comparing different design systems and understanding their trade-offs. For bonus credit, start fresh with the original starter code and apply either the <strong>Atlassian Design System</strong> or <strong>Fluent 2 Design System</strong> (choose one). Work with an LLM to complete the entire implementation process, just as you did with Material Design.</p>
+
+    <h3>Choose Your Design System</h3>
+    <p>Select one of the following design systems:</p>
+    <ul>
+        <li><strong>Atlassian Design System</strong>: Atlassian's design system used in products like Jira, Confluence, and Trello. Explore the <a href="https://atlassian.design/">Atlassian Design System</a> and its component library.</li>
+        <li><strong>Fluent 2 Design System</strong>: Microsoft's modern design system used in products like Microsoft 365, Teams, and Windows. Explore the <a href="https://fluent2.microsoft.design/">Fluent 2 Design System</a> and its <a href="https://react.fluentui.dev/">Fluent UI React components</a>.</li>
+    </ul>
+
+    <h3>Requirements</h3>
+    <p>Using your chosen design system, complete all three parts of the assignment (understanding and applying components, customizing with your own style guide, and implementing advanced features like responsive design and dark mode).</p>
+
+    <h3>Deliverables for Bonus</h3>
+    <ul>
+        <li><strong>Separate implementation</strong>: Create a separate folder (e.g., <code>bonus_atlassian</code> or <code>bonus_fluent</code>) containing your alternative design system implementation</li>
+        <li><strong>Separate prompt log</strong>: Include a separate prompt log file (e.g., <code>prompts_bonus.txt</code>) documenting your work with the alternative design system</li>
+        <li><strong>Comparison in reflection</strong>: Answer the <a href="https://docs.google.com/document/d/1rqNciSYHb_0hUorbwIMPuEBNcJavQVFeEQFoyXPtlTw/edit?usp=sharing">Reflection Questions document</a> for the new design system. Additionally, add the following question and answer it: <em>"Compare your experience using LLMs to implement the two different design systems. How did working with the LLM differ between Material Design and your chosen alternative system?"</em></li>
+    </ul>
+
+    <h2>Submission</h2>
+
+    <p>To submit, zip your repository and upload it to <a href="https://canvas.eee.uci.edu/courses/76736/assignments/1675840">Canvas</a>. Please be sure to complete the <code>readme.txt</code>, add the <code>prompts.txt</code> record of your ZotGPT prompts, and a PDF export of the Reflection Questions Google Doc as <code>reflection_questions.pdf</code>. Any late uploads are subject to the course's <a href="/syllabus#duedates">late policy</a>.</p>
+
+    <h2>Grading</h2>
+    <p>This assignment will be graded on a scale of 10 points, with the possibility of 2 bonus points, broken down as follows:</p>
+    <ul>
+       <li>Material Design Components (2 points)</li>
+       <li>Customized Color and Typography (1 point)</li>
+       <li>Dark Mode and Responsive Design (1 point)</li>
+       <li>Prompt log (1 point): Gathering and organizing all LLM prompts throughout the assignment (submit the exported text file)</li>
+       <li>Reflection questions (5 points): Copy the <a href="https://docs.google.com/document/d/1rqNciSYHb_0hUorbwIMPuEBNcJavQVFeEQFoyXPtlTw/edit?usp=sharing">Reflection Questions Google Doc</a>, fill in your answers, download, and submit.</li>
+       <li>Bonus Part - Alternative Design System (up to 2 points)</li>
+    </ul>
+    <p>You can receive up to 2 points of extra credit for implementing another design system and completing all the requirements for that implementation. See the Bonus Part section above for full details.</p>
+
+<p>The course staff reserves the right to redistribute, penalize, or award bonus points to one or both students in situations where work was not distributed equitably among partnerships.</p>
+
+ </main>
