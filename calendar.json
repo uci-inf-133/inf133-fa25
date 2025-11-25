@@ -496,6 +496,13 @@
 			"date": "2025-11-26",
 			"type": "officehours_ziqi"
 		},
+		{
+			"date": "2025-11-26",
+			"type": "officehours_aaron",
+			"place": {
+					"time": "15:00"
+				}
+		},
         {
             "date": "2025-11-27",
             "type": "holiday",
