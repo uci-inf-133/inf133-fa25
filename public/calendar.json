@@ -486,7 +486,8 @@
 			"type": "lecture",
 			"title": "GenAI and Interface Development",
 			"link": "lectures/11_25_25-genai_interface.pdf",
-			"demo": "demos/11_25_25-genai_interface.zip"
+			"demo": "demos/11_25_25-genai_interface.zip",
+			"recording": "https://uci.yuja.com/V/Video?v=14637755&a=141737572"
 		},
 		{
 			"date": "2025-11-25",
@@ -495,6 +496,13 @@
 		{
 			"date": "2025-11-26",
 			"type": "officehours_ziqi"
+		},
+		{
+			"date": "2025-11-26",
+			"type": "officehours_aaron",
+			"place": {
+					"time": "15:00"
+				}
 		},
         {
             "date": "2025-11-27",
