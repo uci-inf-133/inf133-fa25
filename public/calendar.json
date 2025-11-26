@@ -528,7 +528,8 @@
         {
 			"date": "2025-12-02",
 			"type": "lecture",
-			"title": "Beyond Web & Mobile"
+			"title": "Beyond Web & Mobile",
+			"link": "lectures/12_02_25-beyond_web.pdf"
 		},
 		{
 			"date": "2025-12-02",
@@ -545,7 +546,8 @@
 		{
 			"date": "2025-12-04",
 			"type": "lecture",
-			"title": "Wrap-up"
+			"title": "Wrap-up",
+			"link": "lectures/12_04_25-wrap_up.pdf"
 		},
 		{
 			"date": "2025-12-05",
