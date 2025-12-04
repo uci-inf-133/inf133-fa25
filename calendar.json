@@ -548,7 +548,8 @@
 			"date": "2025-12-04",
 			"type": "lecture",
 			"title": "Wrap-up",
-			"link": "lectures/12_04_25-wrap_up.pdf"
+			"link": "lectures/12_04_25-wrap_up.pdf",
+			"recording": "https://uci.yuja.com/V/Video?v=14700718&a=162832777"
 		},
 		{
 			"date": "2025-12-05",
@@ -558,6 +559,37 @@
 		{
 			"date": "2025-12-05",
 			"type": "officehours_aaron"
+		},
+		{
+			"date": "2025-12-08",
+			"type": "officehours_weijun",
+			"place": {
+					"location": "Zoom",
+					"link": "https://uci.zoom.us/j/3993699399"
+				}
+		},
+		{
+			"date": "2025-12-08",
+			"type": "officehours_aaron",
+			"place": {
+					"time": "15:00"
+				}
+		},
+		{
+			"date": "2025-12-09",
+			"type": "officehours_kaylee",
+			"place": {
+					"time": "10:00"
+				}
+		},
+		{
+			"date": "2025-12-10",
+			"type": "officehours_ziqi",
+			"place": {
+					"time": "11:00",
+					"location": "Zoom",
+					"link": "https://uci.zoom.us/j/9208048200"
+				}
 		},
 		{
 			"date": "2025-12-10",
